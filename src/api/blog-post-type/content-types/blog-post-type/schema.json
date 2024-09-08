@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_post_types",
+  "info": {
+    "singularName": "blog-post-type",
+    "pluralName": "blog-post-types",
+    "displayName": "Blog Post Type",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "Slug": {
+      "type": "string",
+      "unique": true,
+      "required": true,
+      "regex": "^[a-z][a-z0-9_]*[a-z]$"
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "microblog post",
+        "mesoblog post",
+        "macroblog post"
+      ],
+      "required": true
+    },
+    "PluralSlug": {
+      "type": "string",
+      "regex": "^[a-z][a-z0-9_]*[a-z]$",
+      "required": true,
+      "unique": true
+    }
+  }
+}

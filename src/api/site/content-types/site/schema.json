@@ -4,7 +4,8 @@
   "info": {
     "singularName": "site",
     "pluralName": "sites",
-    "displayName": "Site"
+    "displayName": "Site",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,6 +16,9 @@
       "type": "string"
     },
     "Description": {
+      "type": "string"
+    },
+    "LinkedInProfileURL": {
       "type": "string"
     }
   }

@@ -913,6 +913,7 @@ export interface ApiSiteSite extends Schema.SingleType {
     singularName: 'site';
     pluralName: 'sites';
     displayName: 'Site';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -920,6 +921,7 @@ export interface ApiSiteSite extends Schema.SingleType {
   attributes: {
     Slogan: Attribute.String;
     Description: Attribute.String;
+    LinkedInProfileURL: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

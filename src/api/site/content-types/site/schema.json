@@ -16,10 +16,14 @@
       "type": "string"
     },
     "Description": {
-      "type": "string"
+      "type": "text"
     },
     "LinkedInProfileURL": {
       "type": "string"
+    },
+    "Title": {
+      "type": "string",
+      "required": true
     }
   }
 }

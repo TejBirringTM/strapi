@@ -920,8 +920,9 @@ export interface ApiSiteSite extends Schema.SingleType {
   };
   attributes: {
     Slogan: Attribute.String;
-    Description: Attribute.String;
+    Description: Attribute.Text;
     LinkedInProfileURL: Attribute.String;
+    Title: Attribute.String & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

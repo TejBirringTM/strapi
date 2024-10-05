@@ -13,6 +13,7 @@ export interface ObjectsPerson extends Schema.Component {
     Gender: Attribute.Enumeration<['male', 'female']>;
     EmailAddress: Attribute.String;
     PhoneNumber: Attribute.String;
+    LinkedInProfileURL: Attribute.String;
   };
 }
 

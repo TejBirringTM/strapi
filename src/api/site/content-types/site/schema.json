@@ -42,6 +42,10 @@
       "type": "component",
       "repeatable": false,
       "component": "objects.person"
+    },
+    "BaseURL": {
+      "type": "string",
+      "required": true
     }
   }
 }

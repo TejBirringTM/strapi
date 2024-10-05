@@ -929,6 +929,7 @@ export interface ApiSiteSite extends Schema.SingleType {
       Attribute.Required &
       Attribute.DefaultTo<'auto'>;
     Author: Attribute.Component<'objects.person'>;
+    BaseURL: Attribute.String & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

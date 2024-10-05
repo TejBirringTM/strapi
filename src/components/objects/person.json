@@ -28,6 +28,9 @@
     },
     "PhoneNumber": {
       "type": "string"
+    },
+    "LinkedInProfileURL": {
+      "type": "string"
     }
   }
 }

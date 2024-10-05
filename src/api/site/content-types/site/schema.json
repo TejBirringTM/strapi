@@ -24,6 +24,10 @@
     "Title": {
       "type": "string",
       "required": true
+    },
+    "CopyrightOwner": {
+      "type": "string",
+      "required": true
     }
   }
 }

@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_objects_people",
+  "info": {
+    "displayName": "Person",
+    "icon": "cube",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "FirstName": {
+      "type": "string",
+      "required": true
+    },
+    "LastName": {
+      "type": "string",
+      "required": true
+    },
+    "Gender": {
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female"
+      ],
+      "required": false
+    },
+    "EmailAddress": {
+      "type": "string"
+    },
+    "PhoneNumber": {
+      "type": "string"
+    }
+  }
+}

@@ -921,9 +921,14 @@ export interface ApiSiteSite extends Schema.SingleType {
   attributes: {
     Slogan: Attribute.String;
     Description: Attribute.Text;
-    LinkedInProfileURL: Attribute.String;
     Title: Attribute.String & Attribute.Required;
     CopyrightOwner: Attribute.String & Attribute.Required;
+    TitleDeterminer: Attribute.Enumeration<
+      ['a', 'an', 'the', 'auto', '(empty)']
+    > &
+      Attribute.Required &
+      Attribute.DefaultTo<'auto'>;
+    Author: Attribute.Component<'objects.person'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
